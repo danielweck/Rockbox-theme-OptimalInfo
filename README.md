@@ -1,6 +1,8 @@
 # Rockbox theme: OptimalInfo
 (originally hosted at Google Code: https://code.google.com/p/rockbox-themes)
 
+![x](http://rockbox-themes.googlecode.com/svn/trunk/SansaFuzev1v2/screenshots/Rockbox_OptimalInfo_SansaFuze_1_SMALL.jpg)
+
 This is a Rockbox theme for devices with the following screen resolutions:
 
 * 240x320 (Toshiba Gigabeat F/X/S, Sansa Fuze+, Samsung YP-R0)
