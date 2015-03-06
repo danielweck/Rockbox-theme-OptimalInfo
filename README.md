@@ -102,7 +102,7 @@ The color scheme works well with the black iPod Video / 5G:
 
 ![x](http://rockbox-themes.googlecode.com/svn/trunk/iPodVideo5G/screenshots/Rockbox_OptimalInfo_iPodVideo5G_SMALL.jpg)
 
-== Screenshots (Toshiba Gigabeat F/X/S, Sansa Fuze+, Samsung YP-R0) ==
+## Screenshots (Toshiba Gigabeat F/X/S, Sansa Fuze+, Samsung YP-R0)
 
 The main screen, paused (note the white highlight to indicate the playback state):
 
