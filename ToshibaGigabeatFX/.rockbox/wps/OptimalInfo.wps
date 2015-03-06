@@ -1,0 +1,173 @@
+#Theme Name: OptimalInfo
+#By: Daniel Weck
+#Available for platforms:
+### 240x320 (Toshiba Gigabeat F/X/S, Sansa Fuze+, Samsung YP-R0)
+### 220x176 (Sansa Fuze v1/v2, iPod Color/Photo, iRiver H3XX, Philips GoGear HDD63x0)
+### 320x240 (iPod 5G Video, Cowon D2)
+#Version: 0.9
+#Licenced CC-BY-SA 3.0
+#Last updated: Friday, 01 June 2012, 12:00 CEST
+#
+# http://code.google.com/p/rockbox-themes/
+#
+# Background and foreground default colours
+%Vb(000000)
+%Vf(FFFFFF)
+#
+# Default font (pixel-perfect vertical screen alignment!)
+%Fl(2,20-Profont-basil.fnt,256)
+#
+# Status bar disabled
+%wd
+#
+# No background image
+%X(d)
+#
+# ---------------------------------
+# If volume is changing, then volume indicator, otherwise main screen
+%?mv<%Vd(v)|%?mp<%Vd(m)|%Vd(m)|%Vd(m)|%Vd(s)|%Vd(s)>>
+#
+# ---------------------------------
+# Background
+%V(0,0,-,-,2)%VB
+%Vb(B53042)
+%Vf(000000)
+
+#
+# DOES NOT WORK?! %dr(0,0,-,-,1,333333,000000)
+#
+%Vg(666666,000000,333333)%Vs(gradient,9)%al.%ar.
+##2
+%al.%ar.
+##3
+%al.%ar.
+##4
+%al.%ar.
+##5
+%al.%ar.
+##6
+%al.%ar.
+##7
+%al.%ar.
+##8
+%al.%ar.
+##9
+%al.%ar.
+#
+# ---------------------------------
+# Vertical volume peak meter (left)
+%V(0,0,5,-,2)
+%Vb(000000)
+%Vf(333333)
+#
+# If playing, then foreground set to specific colour
+# %?mp<Stop|Play|Pause|Ffwd|Rew|Rec|Rec pause|FM|FM pause>
+%?mp<%Vf(333333)|%Vf(887777)|%Vf(333333)|%Vf(333333)|%Vf(333333)>
+#|%Vf(333333)|%Vf(333333)|%Vf(333333)|%Vf(333333)>
+#
+%pL(0,0,5,-,-,vertical)
+# ---------------------------------
+# Vertical volume peak meter (right)
+%V(-5,0,5,-,2)
+%Vb(000000)
+%Vf(333333)
+#
+# If playing, then foreground set to specific colour
+# %?mp<Stop|Play|Pause|Ffwd|Rew|Rec|Rec pause|FM|FM pause>
+%?mp<%Vf(333333)|%Vf(887777)|%Vf(333333)|%Vf(333333)|%Vf(333333)>
+#|%Vf(333333)|%Vf(333333)|%Vf(333333)|%Vf(333333)>
+#
+%pR(0,0,5,-,-,vertical)
+# ---------------------------------
+# Main screen
+%Vl(m,5,0,230,-,2)
+%Vb(000000)
+%Vf(FFFFFF)
+#
+#
+# Two alternating centred scrolling lines (5s + 2s), first with date / time, second with the battery charge level in percentage, and estimated remaining battery time.
+%Vs(color,003333)%t(5)%s%ac%ca %cb %cd %cH:%cM;%Vs(color,003333)%t(2)%s%ac%Sx(Battery): %bl%% %(~%bt%)
+## :%cS
+#
+# Centred line indicating the current track number (out of total)
+%Vs(color,FFFFFF)%ac%pp/%pe
+## %Sx(Tracknum)
+#
+# Two alternating centred scrolling lines (5s + 1s), second with "Title" (localised string), first with the actual track title.
+%Vs(color,FFFFFF)%t(5)%s%ac%?it<%it|%Sx(Title) %(?%)>;%Vs(color,FFFFFF)%t(1)%ac%Sx(Title)
+#
+# Two alternating centred scrolling lines (5s + 1s), second with "Album" (localised string), first with the actual track album.
+%t(5)%s%ac%?id<%id|%Sx(Album) %(?%)>;%t(1)%ac%Sx(Album)
+#
+# Two alternating centred scrolling lines (5s + 1s), second with "Artist" (localised string), first with the actual track artist.
+%t(5)%s%ac%?ia<%ia|%Sx(Artist) %(?%)>;%t(1)%ac%Sx(Artist)
+#
+# Centred scrolling line with the full track file path
+%Vs(color,777777)%s%al%fp
+#
+# Centred scrolling line: audio codec (e.g. MP3), bitrate (in kilo bits per seconds), and file size (in kilo bytes).
+%Vs(color,777777)%s%ac%fc %(%fsKB%) @ %fbKbps%fv / %fkKHz
+#
+#
+# Centred scrolling line displaying information about the next track (duration, title, album, artist, full path)
+
+%Vs(clear)%s%ac%Sx(Next:) %Sx(Title)=%?It<%It|%Sx(Title) %(?%)> %Sx(Album)=%?Id<%Id|%Sx(Album) %(?%)> %Sx(Artist)=%?Ia<%Ia|%Sx(Artist) %(?%)> %(%Fp%)
+
+#
+#
+# Line that displays playback progress information,
+# with left-aligned part: "elapsed / total (percentage)"
+# and right-aligned part: "-remaining"
+# %?mp<Stop|Play|Pause|Ffwd|Rew|Rec|Rec pause|FM|FM pause>
+%?mp<%Vs(invert)|%Vs(color,FFFFFF)|%Vs(invert)>%al%pc/%pt %(%px%%%) %ar-%pr
+#
+# Playback progress bar
+%pb(-,-,-,8,-)
+#
+# ---------------------------------
+# Volume screen
+%Vl(v,5,0,230,-,2)
+%Vb(000000)
+%Vf(FFFFFF)
+#
+#
+# Two alternating centred scrolling lines (5s + 2s), first with date / time, second with the battery charge level in percentage, and estimated remaining battery time.
+%Vs(color,003333)%t(5)%s%ac%ca %cb %cd %cH:%cM;%Vs(color,003333)%t(2)%s%ac%Sx(Battery): %bl%% %(~%bt%)
+## :%cS
+#
+
+
+
+%Vs(color,FFFFFF)%ac%Sx(Volume)
+%pv(-,-,-,10,-)
+#
+#
+# ---------------------------------
+# Seek screen
+%Vl(s,5,0,230,-,2)
+%Vb(000000)
+%Vf(FFFFFF)
+#
+#
+# Two alternating centred scrolling lines (5s + 2s), first with date / time, second with the battery charge level in percentage, and estimated remaining battery time.
+%Vs(color,003333)%t(5)%s%ac%ca %cb %cd %cH:%cM:%cS;%Vs(color,003333)%t(2)%s%ac%Sx(Battery): %bl%% %(~%bt%)
+## :%cS
+#
+
+
+
+# Line that displays playback progress information,
+# with left-aligned part: "elapsed / total (percentage)"
+# and right-aligned part: "-remaining"
+%Vs(color,FFFFFF)%al%pc/%pt %(%px%%%) %ar-%pr
+#
+# Playback progress bar
+%pb(-,-,-,8,-)
+#
+#
+#
+#
+#
+#
+# Rectangle
+## %_dr(0,0,220,176,FFFFFF,FF0000)
