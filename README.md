@@ -1,7 +1,7 @@
 # Rockbox theme: OptimalInfo
 (originally hosted at Google Code: https://code.google.com/p/rockbox-themes)
 
-![x](http://rockbox-themes.googlecode.com/svn/trunk/SansaFuzev1v2/screenshots/Rockbox_OptimalInfo_SansaFuze_1_SMALL.jpg)
+![x](https://raw.githubusercontent.com/danielweck/Rockbox-theme-OptimalInfo/master/SansaFuzev1v2/screenshots/Rockbox_OptimalInfo_SansaFuze_1_SMALL.jpg)
 
 This is a Rockbox theme for devices with the following screen resolutions:
 
@@ -80,9 +80,9 @@ The menu style is in keeping with the "while playing screen", nothing fancy (not
 
 My Sansa Fuze v2 is red, thus why I chose a similar hue in the color scheme:
 
-![x](http://rockbox-themes.googlecode.com/svn/trunk/SansaFuzev1v2/screenshots/Rockbox_OptimalInfo_SansaFuze_1_SMALL.jpg)
+![x](https://raw.githubusercontent.com/danielweck/Rockbox-theme-OptimalInfo/master/SansaFuzev1v2/screenshots/Rockbox_OptimalInfo_SansaFuze_1_SMALL.jpg)
 
-![x](http://rockbox-themes.googlecode.com/svn/trunk/SansaFuzev1v2/screenshots/Rockbox_OptimalInfo_SansaFuze_2_SMALL.jpg)
+![x](https://raw.githubusercontent.com/danielweck/Rockbox-theme-OptimalInfo/master/SansaFuzev1v2/screenshots/Rockbox_OptimalInfo_SansaFuze_2_SMALL.jpg)
 
 ## Screenshots (iPod 5G Video, Cowon D2)
 
@@ -102,7 +102,7 @@ The menu style is in keeping with the "while playing screen", nothing fancy (not
 
 The color scheme works well with the black iPod Video / 5G:
 
-![x](http://rockbox-themes.googlecode.com/svn/trunk/iPodVideo5G/screenshots/Rockbox_OptimalInfo_iPodVideo5G_SMALL.jpg)
+![x](https://raw.githubusercontent.com/danielweck/Rockbox-theme-OptimalInfo/master/iPodVideo5G/screenshots/Rockbox_OptimalInfo_iPodVideo5G_SMALL.jpg)
 
 ## Screenshots (Toshiba Gigabeat F/X/S, Sansa Fuze+, Samsung YP-R0)
 
